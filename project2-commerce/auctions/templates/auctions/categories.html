@@ -1,0 +1,34 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    {% if categories %}
+        <h2>Choose a category</h2>
+        
+        <form action="{% url 'categories' %}" method="get">
+            <select name="cat">
+                {% for category in categories %}
+                    <option value="{{ category.0 }}">{{ category.1 }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">List all active listings for this category</button>
+        </form>
+    
+    {% else %}
+        <h2>Active Listings</h2>
+
+        {% for listing, price in listings %}
+        <div>
+            {% if listing.image %}
+                <img alt="{{ listing.title }} image" src="{{ listing.image }}" style="height: 10%; width: 10%;">
+            {% endif %}
+            <h4><a href="{% url 'listing' listing.id %}">{{ listing.title }}</a></h4>
+            <p><strong>Price</strong>: ${{ price }}</p>
+            <p>{{ listing.description }}</p>
+            <p>Created {{ listing.time }}</p>
+        </div>
+        {% empty %}
+            <div>No currently active listings.</div>
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}

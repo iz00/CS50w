@@ -1,0 +1,22 @@
+textarea {
+    min-height: 400px;
+}
+
+.email {
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: black;
+    padding: 4px;
+}
+
+.read {
+    background-color: lightgray;
+}
+
+.unread {
+    background-color: white;
+}
+
+#email-view {
+    display: none;
+}

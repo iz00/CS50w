@@ -1,0 +1,101 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+    {% if listing %}
+
+        <h4>Listing: {{ listing.title }}</h4>
+
+        {% if user.is_authenticated %}
+            <form action="{% url 'watchlist' %}" method="post">
+                {% csrf_token %}
+                <input name="listing" type="hidden" value="{{ listing.id }}">
+                {% if watchlist %}
+                    <button type="submit">Remove from watchlist</button>
+                {% else %}
+                    <button type="submit">Add to watchlist</button>
+                {% endif %}
+            </form>
+        {% endif %}
+
+        {% if listing.lister == request.user and listing.status == "open" %}
+            <form action="{% url 'close' %}" method="post">
+                {% csrf_token %}
+                <input name="listing" type="hidden" value="{{ listing.id }}">
+                <button type="submit">Close the listing</button>
+            </form>
+        {% endif %}
+
+        {% if listing.image %}
+                <img alt="{{ listing.title }} image" src="{{ listing.image }}" style="height: 10%; width: 10%;">
+        {% endif %}
+        <p>{{ listing.description }}</p>
+
+        {% if bids %}
+            <h4>${{ bids.0.price }}</h4>
+            {{ bids | length }} bid(s) so far.
+
+            {% if bids.0.bidder == request.user %}
+                Your bid is the current bid.
+            {% endif %}
+
+        {% else %}
+            <h4>${{ listing.starting_bid }}</h4>
+            No bids so far.
+        {% endif %}
+
+        {% if request.user.is_authenticated and listing.status == "open" and request.user != listing.lister %}
+
+            <form action="{% url 'bid' %}" method="post">
+                {% csrf_token %}
+                {{ bid_form }}
+                <input name="listing" type="hidden" value="{{ listing.id }}">
+                <button type="submit">Place Bid</button>
+            </form>
+
+        {% elif listing.status == "closed" %}
+
+            <h4>Listing Closed.</h4>
+
+            {% if bids.0.bidder == request.user %}
+                <h5>You have won the listing.</h5>
+            {% endif %}
+
+        {% endif %}
+
+        <h5>Details</h5>
+        <ul>
+            <li>Listed by: <strong>{{ listing.lister.username }}</strong></li>
+            <li>Category:
+                {% if listing.category %}
+                    {{ listing.category | capfirst }}.
+                {% else %}
+                    No category listed.
+                {% endif %}
+            </li>
+        </ul>
+
+        <h5>Comments</h5>
+        {% if user.is_authenticated %}
+            <form action="{% url 'comment' %}" method="post">
+                {% csrf_token %}
+                {{ comment_form }}
+                <input name="listing" type="hidden" value="{{ listing.id }}">
+                <button type="submit">Comment</button>
+            </form>
+        {% endif %}
+        <ul>
+            {% for comment in comments %}
+                <li><strong>{{ comment.commenter }}</strong>: {{ comment.content }}</li>
+            {% empty %}
+                <p>No comments yet.</p>
+            {% endfor %}
+        </ul>
+
+    {% else %}
+
+        <h4>Error: Not a valid listing.</h4>
+
+    {% endif %}
+
+{% endblock %}

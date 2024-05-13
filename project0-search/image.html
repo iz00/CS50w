@@ -1,0 +1,38 @@
+<!-- Simulate Google Image Search's Frontend  -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Image Search</title>
+        <!-- Bootstrap's CSS: https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container-fluid">
+
+            <!-- Bootstrap's navbar to get to search, which is the default page -->
+            <header>
+                <ul class="m-3 nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/">Google Search</a>
+                    </li>
+                </ul>
+            </header>
+
+            <!-- A form to simulate Google's -->
+            <main class="text-center">
+                <img alt="CS50's duck debugger" class="img-fluid" src="duck.png">
+                <form action="https://google.com/images" class="mt-4" method="get">
+                    <input autocomplete="off" autofocus class="form-control form-control-lg mb-4 mx-auto w-50" name="q" placeholder="Query" type="search">
+                    <button class="btn btn-light" type="submit">Image Search</button>
+                </form>
+            </main>
+
+        </div>
+    </body>
+</html>
