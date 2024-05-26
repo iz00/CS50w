@@ -29,20 +29,20 @@ As per the course's [Policy](https://cs50.harvard.edu/web/honesty/):
 <div align="center">
 
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" alt="HTML icon" title="HTML" height="50"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" alt="CSS icon" title="CSS" height="50"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" alt="Sass icon" title="Sass" height="50"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" alt="CSS icon" title="CSS" height="50"/>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" alt="Sass icon" title="Sass" height="50"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap icon" title="Bootstrap" height="50"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" alt="Python icon" title="Python" height="50"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" alt="Python icon" title="Python" height="50"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/django/django-plain.svg" alt="Django icon" title="Django" height="50"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="JavaScript icon" title="JavaScript" height="50"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="JavaScript icon" title="JavaScript" height="50"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" alt="React icon" title="React" height="50"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/json/json-original.svg" alt="JSON icon" title="JSON" height="50"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" alt="Git icon" title="Git" height="50"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg" alt="GitHub icon" title="GitHub" height="50"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" alt="Git icon" title="Git" height="50"/>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg" alt="GitHub icon" title="GitHub" height="50"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/githubactions/githubactions-original.svg" alt="GitHub Actions icon" title="GitHub Actions" height="50"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/selenium/selenium-original.svg" alt="Selenium icon" title="Selenium" height="50"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original.svg" alt="Docker icon" title="Docker" height="50"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/chrome/chrome-original.svg" alt="Chrome icon" title="Chrome" height="50"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/chrome/chrome-original.svg" alt="Chrome icon" title="Chrome" height="50"/>
 
 </div>
 
