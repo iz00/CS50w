@@ -47,3 +47,29 @@ As per the course's [Policy](https://cs50.harvard.edu/web/honesty/):
 </div>
 
 <br><hr>
+
+## Table of Contents
+
+### [Week 0 - HTML and CSS](https://cs50.harvard.edu/web/2020/weeks/0/), [Week 1 - Git](https://cs50.harvard.edu/web/2020/weeks/1/), [Week 2 - Python](https://cs50.harvard.edu/web/2020/weeks/2/)
+- [**Project 0**](https://cs50.harvard.edu/web/2020/projects/0/search/):
+  - [Search](https://github.com/iz00/CS50w/tree/main/project0-search)
+
+##
+
+### [Week 3 - Django](https://cs50.harvard.edu/web/2020/weeks/3/)
+- [**Project 1**](https://cs50.harvard.edu/web/2020/projects/1/wiki/):
+  - [Wiki](https://github.com/iz00/CS50w/tree/main/project1-wiki)
+
+##
+
+### [Week 4 - SQL, Models and Migrations](https://cs50.harvard.edu/web/2020/weeks/4/)
+- [**Project 2**](https://cs50.harvard.edu/web/2020/projects/2/commerce/):
+  - [Commerce](https://github.com/iz00/CS50w/tree/main/project2-commerce)
+
+##
+
+### [Week 5 - Javascript](https://cs50.harvard.edu/web/2020/weeks/5/), [Week 6 - user Interfaces](https://cs50.harvard.edu/web/2020/weeks/6/)
+- [**Project 3**](https://cs50.harvard.edu/web/2020/projects/3/mail/):
+  - [Mail](https://github.com/iz00/CS50w/tree/main/project3-mail)
+
+<br><hr>
