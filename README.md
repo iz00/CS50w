@@ -68,7 +68,7 @@ As per the course's [Policy](https://cs50.harvard.edu/web/honesty/):
 
 ##
 
-### [Week 5 - Javascript](https://cs50.harvard.edu/web/2020/weeks/5/), [Week 6 - user Interfaces](https://cs50.harvard.edu/web/2020/weeks/6/)
+### [Week 5 - Javascript](https://cs50.harvard.edu/web/2020/weeks/5/), [Week 6 - User Interfaces](https://cs50.harvard.edu/web/2020/weeks/6/)
 - [**Project 3**](https://cs50.harvard.edu/web/2020/projects/3/mail/):
   - [Mail](https://github.com/iz00/CS50w/tree/main/project3-mail)
 
