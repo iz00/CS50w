@@ -73,3 +73,6 @@ As per the course's [Policy](https://cs50.harvard.edu/web/honesty/):
   - [Mail](https://github.com/iz00/CS50w/tree/main/project3-mail)
 
 <br><hr>
+
+## Others
+- ### [CS50x Additional Practices, Labs and Problem Sets solutions](https://github.com/iz00/CS50x/).
